@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  length: 1
+  orientation: MyString
+  row: 1
+  column: 1
+  BattleshipGame_id: 
+
+two:
+  length: 1
+  orientation: MyString
+  row: 1
+  column: 1
+  BattleshipGame_id: 

@@ -1,0 +1,41 @@
+<h1><%= @game.updated_at.to_s + " – " + @game.title %></h1>
+
+<p>
+  <%= link_to( "<< Back to index", battleship_games_path) %>
+</p>
+<table>
+  <tr>
+    <td>
+
+    </td>
+    <% 10.times do |i| %>
+    <td>
+      <%= i %>
+    </td>
+    <% end %>
+  </tr>
+  <% 10.times do |i| %>
+  <tr>
+    <td>
+      <%= i %>
+    </td>
+    <% 10.times do |j| %>
+    <td>
+      <%= @game.has_ship(i, j) ? "X" : "~" %>
+    </td>
+    <% end %>
+  </tr>
+  <% end %>
+</table>
+
+<h2>Create new battleship:</h2>
+<%= form_for @battleship do |f| %>
+  <%= f.hidden_field :battleship_game_id %>
+  <%= f.label :row %>
+  <%= f.text_field :row %>
+  <%= f.label :column %>
+  <%= f.text_field :column %>
+  <%= f.label :length %>
+  <%= f.text_field :length %>
+  <%= f.submit "Create" %>
+<% end %>
