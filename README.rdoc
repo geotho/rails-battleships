@@ -1,28 +1,10 @@
-== README
+== Battleship game
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This simple Rails app allows you to create BattleshipGames which have many
+Battleships in them.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+It's still missing a few features. Here are the todos:
+* Add an orientation to the battleship form
+* Validate that Battleships cannot cross over each other
+* Validate that Battleships cannot extend off the edge of the board
+* Put a limit on the amount of Battleships a BattleshipGame can have
